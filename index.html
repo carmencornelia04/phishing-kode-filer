@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branching Scenario: Phishing</title>
+    <script src="js/project.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>BRANCHING SCENARIO: PHISHING</h1>
+
+    <section id="front-page">
+        <div class="content-wrapper">
+            <div class="image-side">
+                <img src="img/phishing-illustration.png" alt="phishing-illustration">
+            </div>
+            <div class="text-side">
+                <h2>Phishing er en svindelmetode, hvor kriminelle forsøger at lokke personlige oplysninger fra dig via sms, mail og falske hjemmesider.</h2>
+
+                <h3>Er du klar til at lære hvordan du undgår phishing?</h3>
+
+                <button id="start">LET'S GO!</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="content-1" class="hidden">
+        <div id="scenario">
+            <p>Det er fredag aften, klokken er mange og Ingeborg sidder og arbejder på et vigtigt projekt til skolen. Hun har valgt at blive hjemme denne fredag aften, da hun gerne vil blive færdig med projektet men derudover også spare de sidste penge hun har tilbage i måneden...</p>
+            <button id="next">FORTSÆT</button>
+        </div>
+    </section>
+
+    <section id="content-2" class="hidden">
+        <div class="content-wrapper">
+            <div class="image-side">
+                <img src="img/4642a60f-de81-4e6b-9807-5c6765f2160e.jpg" alt="illustration af Ingeborg">
+            </div>
+            <div class="text-side">
+                <div class="scenario-continued">
+                    <p>Pludselig popper en mail frem i højre hjørne af computeren, fra SKAT: 
+                        
+                        <p>“Du har overskydende SKAT tilbage...”</p>
+                        
+                        <p>Hun trykker instinktivt på mailen med det samme for at se hvad der mere står...</p>
+                        
+                        <p>“Klik på dette link for at se beløbet og modtag dine penge.”</p>
+
+                    <p>Hvad gør hun?</p>
+                </div>
+                <div id="options">
+                    <button id="A">A. Hun klikker på linket</button>
+                    <button id="B">B. Hun ignorerer mailen</button>
+                    <button id="C">C. Hun bliver i tvivl og kontakter SKAT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="end-A" class="end-screen hidden">
+        <p>Du valgte A. Hun klikker på linket</p>
+        <p>❌ ÅH NEJ! Du valgte at klikke på linket uden først at tænke over konsekvenserne. Et phishinglink har altid til hensigt at lokke personlige oplysninger ud af dig, så det er super vigtigt at holde godt øje når man får mistænkelige mails, ellers kan det føre til økonomisk tab eller identitetstyveri.</p>
+        <button id="next-end-continued-A">Hvad kan Ingeborg (og du!) tage med videre fra denne oplevelse? Klik her for at finde ud af det</button>
+    </section>
+
+    <section id="end-B" class="end-screen hidden">
+        <p>Du valgte B. Hun ignorerer mailen og fortæller en ven om oplevelsen</p>
+        <p>✅ Godt valg! Ignorer altid mails som minimum hvis du modtager noget uventet og tjek afsenderadresser detaljeret - ofte ligner det de ægte e-mails. Ved at ignorere e-mailen, beskytter du dine personlige oplysninger.</p>
+        <p>💬 Ved at dele sine oplevelser med andre, er man med til at mindske og stoppe phishing. Jo flere der er opmærksomme på det, jo bedre et fundament er der for at det stopper så alle igen kan bruge internettet uden at være bange. Der er dog også en masse tiltag man kan gøre sig, så man ikke bliver udsat for phishing.</p>
+        <button id="next-end-continued-B">Hvad kan Ingeborg (og du!) tage med videre fra denne oplevelse? Klik her for at finde ud af det</button>
+    </section>
+
+    <section id="end-C" class="end-screen hidden">
+        <p>Du valgte C. Hun bliver i tvivl og kontakter SKAT</p>
+        <p>✅ SÅDAN! At kontakte SKAT fra starten hvis man er i tvivl, er en meget god start. Herved beskytter man sine oplysninger og hackerne får ikke adgang.</p>
+        <p>🤝 Den erfaring man selv gør sig, kan redde andre hvis man åbner op omkring det. Jo mere myndighederne, politiet og SKAT bliver oplyst om problemet, jo nemmere bliver det for dem at mindske svindel fremadrettet.</p>
+        <button id="next-end-continued-C">Hvad kan Ingeborg (og du!) tage med videre fra denne oplevelse? Klik her for at finde ud af det</button>
+    </section>
+
+    <section id="end-continued-A" class="end-screen hidden">
+        <div class="content-wrapper">
+            <div class="image-side">
+                <img src="img/Sådan-kan-phishing-se-ud.png" alt="sådan kan phishing se ud">
+            </div>
+            <div class="text-side">
+                <p>Ingeborg bliver snydt men lærer af oplevelsen.
+                    Det er menneskeligt at fejle og når det kommer til phishing skal man være meget opmærksom for at kunne genkende faresignalerne og ignorere eller rapportere inden det er for sent. Det vigtigste efter at være blevet udsat for phishing er, at man lærer noget af det til næste gang og bliver i stand til bedre at kunne genkende faresignalerne.</p>
+                <button class="start-over">Prøv scenariet igen for at blive endnu klogere på phishing</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="end-continued-B" class="end end-screen hidden">
+        <div class="content-wrapper">
+            <div class="image-side">
+                <img src="img/Sådan-undgås-det.png" alt="sådan undgås phishing">
+            </div>
+            <div class="text-side">
+                <p>Ingeborg vil hjælpe andre til at undgå phishing i fremtiden.
+                    Når man selv kan genkende faresignalerne på phishing, er det bedste man kan gøre, at dele sin viden med andre mennesker. Ved at dele sin viden, skaber man en generel større digital sikkerhed og er med til at mindske sansynligheden for at phishing bliver ved med at true i den digitale verden.</p>
+                <button class="start-over">Prøv scenariet igen for at blive endnu klogere på phishing</button>
+            </div>
+        </div>
+    </section>
+            
+    <section id="end-continued-C" class="end-screen hidden">
+        <div class="content-wrapper">
+            <div class="image-side">
+                <img src="img/Typiske-kendetegn.png" alt="typiske kendetegn på phishing">
+            </div>
+            <div class="text-side">
+                <p>Ingeborg undgår at blive snydt og bliver klogere på phishing til fremtiden.
+                    Når man lærer at identificere de forskellige kendetegn på phishing, bliver man også bedre til at beskytte sig selv og sine oplysninger. Selvom man kan komme til at reagere for hurtigt på phishing mails, er det stadig godt at kende faresignalerne og kunne reagere hurtigt, så man ikke når at give de kriminelle adgang i så lang tid at det kan skade dine personlige oplysninger.</p>
+                <button class="start-over">Prøv scenariet igen for at blive endnu klogere på phishing</button>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

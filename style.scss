@@ -1,0 +1,110 @@
+@use 'partial';
+
+.bentham-regular {
+    font-family: partial.$primary-font;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+body {
+    font-family: partial.$secondary-font;
+    background-color: partial.$primary-color;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    @include partial.center-content;
+    padding: 2rem;
+    font-family: partial.$primary-font;
+    color: partial.$secondary-color;
+}
+
+h1 {
+    font-family: partial.$primary-font;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2, h3 {
+    font-family: partial.$secondary-font;
+    color: black;
+}
+
+section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+#scenario, #scenario-continued, #options {
+    @include partial.center-content;
+    gap: 1rem;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: partial.$secondary-color;
+    color: white;
+    border: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: darken(partial.$secondary-color, 10%);
+}
+
+p {
+    color: black;
+    font-family: partial.$secondary-font;
+    font-size: 1rem;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.image-side img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-side {
+    max-width: 600px;
+}
+
+.text-side p {
+    text-align: left;
+}
+
+.text-side button {
+    margin-top: 1rem;
+}
+
+.end-screen {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+}

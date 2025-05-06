@@ -1,0 +1,127 @@
+/* Variabler */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.bentham-regular {
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Josefin Sans";
+  background-color: #FBEEDC;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: "Kaushan Script";
+  color: #FF0000;
+}
+
+h1 {
+  font-family: "Kaushan Script";
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2, h3 {
+  font-family: "Josefin Sans";
+  color: black;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#scenario, #scenario-continued, #options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: #FF0000;
+  color: white;
+  border: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+p {
+  color: black;
+  font-family: "Josefin Sans";
+  font-size: 1rem;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.image-side img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-side {
+  max-width: 600px;
+}
+
+.text-side p {
+  text-align: left;
+}
+
+.text-side button {
+  margin-top: 1rem;
+}
+
+.end-screen {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

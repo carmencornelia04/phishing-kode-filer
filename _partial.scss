@@ -1,0 +1,27 @@
+/* Variabler */
+
+$primary-color: #FBEEDC; 
+$text-color: black;
+$secondary-color: #FF0000;
+$primary-font: "Kaushan Script";
+$secondary-font: "Josefin Sans";
+
+@mixin center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.8s ease forwards;
+  }
