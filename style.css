@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 /* Variabler */
 @keyframes fadeIn {
   from {
@@ -11,14 +13,8 @@
   animation: fadeIn 0.8s ease forwards;
 }
 
-.bentham-regular {
-  font-family: "Kaushan Script";
-  font-weight: 400;
-  font-style: normal;
-}
-
 body {
-  font-family: "Josefin Sans";
+  font-family: "Roboto", sans-serif;
   background-color: #FBEEDC;
   margin: 0;
   padding: 0;
@@ -31,20 +27,21 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  font-family: "Kaushan Script";
+  font-family: "Sarpanch", sans-serif;
   color: #FF0000;
 }
 
 h1 {
-  font-family: "Kaushan Script";
+  font-family: "Sarpanch", sans-serif;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
 }
 
 h2, h3 {
-  font-family: "Josefin Sans";
+  font-family: "Roboto", sans-serif;
   color: black;
+  font-weight: normal;
 }
 
 section {
@@ -77,6 +74,7 @@ button {
   cursor: pointer;
   border-radius: 8px;
   font-size: 1rem;
+  font-family: "Sarpanch", sans-serif;
 }
 
 button:hover {
@@ -85,7 +83,7 @@ button:hover {
 
 p {
   color: black;
-  font-family: "Josefin Sans";
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
 }
 
@@ -118,6 +116,10 @@ p {
 
 .end-screen {
   text-align: center;
+}
+
+.user-choice {
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {

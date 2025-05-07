@@ -3,8 +3,8 @@
 $primary-color: #FBEEDC; 
 $text-color: black;
 $secondary-color: #FF0000;
-$primary-font: "Kaushan Script";
-$secondary-font: "Josefin Sans";
+$primary-font: 'Sarpanch', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
 
 @mixin center-content {
     display: flex;
