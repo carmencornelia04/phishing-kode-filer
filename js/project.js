@@ -36,14 +36,14 @@ const endC = document.getElementById('end-C');
 buttonA.addEventListener('click', function() {
     localStorage.setItem('userChoice', 'A');
     content2.classList.add('hidden');
-    endA.classList.remove('hidden');
+    endA.classList.remove('hidden'); 
     fadeInSection(endA);
 });
 
 buttonB.addEventListener('click', function() {
     localStorage.setItem('userChoice', 'B');
     content2.classList.add('hidden');
-    endB.classList.remove('hidden');
+    endB.classList.remove('hidden'); 
     fadeInSection(endB);
 });
 
@@ -84,7 +84,6 @@ const startOverButtons = document.querySelectorAll('.start-over');
 
 startOverButtons.forEach(button => {
     button.addEventListener('click', function() {
-        localStorage.removeItem('userChoice');
         endContinuedA.classList.add('hidden');
         endContinuedB.classList.add('hidden');
         endContinuedC.classList.add('hidden');
