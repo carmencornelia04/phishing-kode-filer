@@ -84,7 +84,6 @@ const startOverButtons = document.querySelectorAll('.start-over');
 
 startOverButtons.forEach(button => {
     button.addEventListener('click', function() {
-        localStorage.removeItem('userChoice');
         endContinuedA.classList.add('hidden');
         endContinuedB.classList.add('hidden');
         endContinuedC.classList.add('hidden');
